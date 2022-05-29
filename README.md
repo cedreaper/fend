@@ -22,7 +22,7 @@ You can open index.html directly into a browser to run the program. Provided fil
 - A section that is in the viewport is differentiated by animation.
 - When hovering over a link in the nav bar it is highlighted in the color white.
 
-### Helping Resources
+### Helpful Resources
 
 [(Back to top)](#table-of-contents)
 
