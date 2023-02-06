@@ -10,11 +10,6 @@
 
 /* ---- Base Rules ---- */
 
-/* Scroll behavior to achieve scroll effect */
-html {
-  scroll-behavior: smooth;
-}
-
 body {
   background: rgb(136, 203, 171);
   background: linear-gradient(
@@ -97,6 +92,10 @@ section {
   transition: ease 0.3s all;
 }
 
+.navbar__menu .menu__link:hover {
+  background-color: #ffffff;
+}
+
 /* Header Styles */
 .page__header {
   background: #fff;
@@ -124,10 +123,34 @@ section {
   text-align: left;
 }
 
+@media (min-width: 5%) {
+  .navbar__menu .menu__link:hover .active-nav {
+    background-color: #ffffff;
+  }
+
+  .active-nav {
+    background-color: #ffffff;
+  }
+}
+
 @media only screen and (min-width: 35em) {
   .landing__container {
     max-width: 50em;
     padding: 4em;
+  }
+
+  .navbar__menu .menu__link:hover {
+    background: #333;
+    /* color: #fff; */
+    transition: ease 0.3s all;
+  }
+
+  .navbar__menu .menu__link:hover {
+    background-color: #ffffff;
+  }
+
+  .active-nav {
+    background-color: #ffffff;
   }
 }
 
@@ -213,7 +236,7 @@ section:nth-of-type(3n) .landing__container::after {
 /* Section Active Styles */
 /* Note: your-active-class class is applied through javascript. You should update the class here and in the index.html to what you set in your javascript file.  */
 section.active {
-  /* background: rgb(0, 0, 0); */
+  background: rgb(0, 0, 0);
   background: linear-gradient(
     0deg,
     rgba(0, 0, 0, 0.1) 0%,
@@ -239,4 +262,10 @@ section.active .landing__container::after {
   to {
     transform: rotate(360deg) translate(-1em) rotate(-360deg);
   }
+}
+
+/* Navigation Bar Section Active */
+
+.active-nav {
+  background-color: #ffffff;
 }
